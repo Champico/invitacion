@@ -34,7 +34,7 @@
 
   /* SECCION 2*/
   .seccion-ubicacion {
-      background-color: #e38a9b;
+      background-color: #f57d93;
   }
 
 
@@ -76,7 +76,7 @@
   }
 
   .moño-izq-bottom {
-    display: none;
+      display: none;
       bottom: 40px;
       right: 40px;
   }
@@ -158,22 +158,106 @@
 
 
 
-@keyframes entradaSuave {
-    0% {
-        opacity: 0;
-        transform: translateY(30px) scale(0.95);
-        filter: blur(5px);
-        visibility: hidden;
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-        filter: blur(0);
-        visibility: visible;
-    }
-}
+  @keyframes entradaSuave {
+      0% {
+          opacity: 0;
+          transform: translateY(30px) scale(0.95);
+          filter: blur(5px);
+          visibility: hidden;
+      }
 
-.entrada {
-    opacity: 0;
-    animation: entradaSuave 1.2s ease-out forwards;
-}
+      100% {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+          filter: blur(0);
+          visibility: visible;
+      }
+  }
+
+  .entrada {
+      opacity: 0;
+      animation: entradaSuave 1.2s ease-out forwards;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .seccion-ubicacion {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  /* Franjas */
+  .location-banner {
+      width: 100%;
+      height: 24%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .location-banner img {
+      width: 50%;
+      display: block;
+  }
+
+  /* Mapa */
+  .map-container {
+      width: 100%;
+      max-width: 1100px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+  }
+
+  .map-container iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+  }
+
+  /* Botón */
+  .map-button {
+      display: inline-block;
+      position: absolute;
+      bottom: 40px;
+      padding: 14px 28px;
+      background-color: #ffc8c8;
+      color: #371414;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 999px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .map-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+
+  @media (max-width: 768px) {
+      .map-container iframe {
+          height: 300px;
+      }
+
+      .location-banner img {
+          width: 80%;
+          display: block;
+      }
+  }
