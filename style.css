@@ -186,35 +186,37 @@
 
 
 
-/* ======== A N I M A C I O N  F L E C H A ==============00*/
+  /* ======== A N I M A C I O N  F L E C H A ==============00*/
   .flecha-scroll {
-    position: absolute;
-    left: 50%;
-    bottom: 30px; /* ajusta según tu diseño */
-    transform: translateX(-50%);
-    animation: parpadeo 1.6s ease-in-out infinite;
-    pointer-events: none; /* no estorba clics */
-}
+      position: absolute;
+      left: 50%;
+      bottom: 35px;
+      transform: translateX(-50%);
+      animation: parpadeo 1.6s ease-in-out infinite;
+      pointer-events: none;
+  }
 
-.flecha-scroll svg {
-    fill: rgba(255, 255, 255, 0.7);
-}
+  .flecha-scroll svg {
+      fill: rgba(255, 255, 255, 0.721);
+  }
 
-/* Animación */
-@keyframes parpadeo {
-    0% {
-        opacity: 0;
-        transform: translateX(-50%) translateY(0);
-    }
-    50% {
-        opacity: 1;
-        transform: translateX(-50%) translateY(8px);
-    }
-    100% {
-        opacity: 0;
-        transform: translateX(-50%) translateY(0);
-    }
-}
+  /* Animación */
+  @keyframes parpadeo {
+      0% {
+          opacity: 0;
+          transform: translateX(-50%) translateY(0);
+      }
+
+      50% {
+          opacity: 1;
+          transform: translateX(-50%) translateY(8px);
+      }
+
+      100% {
+          opacity: 0;
+          transform: translateX(-50%) translateY(0);
+      }
+  }
 
 
 
@@ -316,7 +318,8 @@
           width: 20%;
 
       }
-/*
+
+      /*
       .map-container iframe {
           height: 450px;
       }*/
@@ -330,19 +333,81 @@
 
 
 
+
+
+
+
+
+
+
+  .seccion-dos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      text-align: center;
+  }
+
+
+  .message-banner {
+      height: 20%;
+      max-width: 700px;
+  }
+
+  /* Imagen */
+  .img-confirmacion {
+      width: 90%;
+      height: auto;
+  }
+
+
+  /* Botón WhatsApp */
   .btn-whatsapp {
-      display: inline-block;
-      padding: 14px 22px;
-      background-color: #25D366;
-      color: white;
-      font-weight: bold;
-      border-radius: 30px;
+      background-color: #f6b1c3;
+      color: #fff;
       text-decoration: none;
-      font-family: Arial, sans-serif;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      padding: 14px 28px;
+      border-radius: 40px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 8px 20px rgba(246, 177, 195, 0.45);
   }
 
   .btn-whatsapp:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(246, 177, 195, 0.6);
+  }
+
+  /* Contador */
+  .contador {
+      font-size: 6rem;
+      font-weight: 700;
+      letter-spacing: 4px;
+      color: #ffffff;
+      font-family: 'Times New Roman', Times, serif;
+  }
+
+  .contador span {
+      min-width: 50px;
+      display: inline-block;
+  }
+
+  #falta {
+      font-size: 4em;
+      color: #ffd7df;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      font-family: 'Times New Roman', Times, serif;
+  }
+
+
+  @media (max-width: 768px) {
+
+      /* Contador */
+      .contador {
+          font-size: 3rem;
+      }
+
   }

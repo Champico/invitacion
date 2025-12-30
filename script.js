@@ -4,3 +4,6 @@ window.addEventListener('load', () => {
         el.classList.add('animar');
     });
 });
+
+
+
