@@ -40,9 +40,15 @@
 
   /* SECCION 3 */
   .seccion-dos {
-      background-color: #ff7f97;
+      background-color: #ffffff;
   }
 
+  .texture-dos {
+      background-image: url("imagenes/textura-2.1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top left;
+  }
 
 
 
@@ -345,13 +351,13 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 30px;
+      gap: 20px;
       text-align: center;
+      position: relative;
   }
 
 
   .message-banner {
-      height: 20%;
       max-width: 700px;
   }
 
@@ -373,6 +379,7 @@
       font-weight: 600;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
       box-shadow: 0 8px 20px rgba(246, 177, 195, 0.45);
+      margin-bottom: 40px;
   }
 
   .btn-whatsapp:hover {
@@ -380,34 +387,78 @@
       box-shadow: 0 12px 28px rgba(246, 177, 195, 0.6);
   }
 
-  /* Contador */
-  .contador {
-      font-size: 6rem;
-      font-weight: 700;
-      letter-spacing: 4px;
-      color: #ffffff;
-      font-family: 'Times New Roman', Times, serif;
+  .snoopy {
+      /*position: absolute;
+    top: 20px;
+    right: 30px;*/
+      width: 120px;
   }
 
-  .contador span {
-      min-width: 50px;
-      display: inline-block;
+  .snoopy img {
+      width: 90%;
+      object-fit: contain;
   }
+
+
+
+
 
   #falta {
       font-size: 4em;
-      color: #ffd7df;
+      color: #e97088;
       padding-bottom: 0px;
       padding-top: 0px;
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Alice', 'Times New Roman', Times, serif;
   }
 
 
+  /* Contador */
+  .contador {
+      font-weight: 700;
+      letter-spacing: 4px;
+      color: #de7079;
+      font-family: 'Alice', 'Times New Roman', Times, serif;
+
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+  }
+
+  .unidad {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .numero {
+      font-size: 6rem;
+      font-weight: bold;
+  }
+
+  .label {
+      font-size: 1.45rem;
+      color: #de7079;
+      margin-top: 2px;
+      text-transform: lowercase;
+  }
+
+  .separador {
+      font-size: 2em;
+      font-weight: bold;
+      color: #de7079;
+      margin: 0 4px;
+  }
+
   @media (max-width: 768px) {
 
-      /* Contador */
-      .contador {
-          font-size: 3rem;
-      }
+  .numero {
+      font-size: 3rem;
+  }
+
+    .label {
+      font-size: 0.7rem;
+  }
 
   }

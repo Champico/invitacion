@@ -26,6 +26,12 @@
     <meta property="og:image:width" content="500">
     <meta property="og:image:height" content="500">
 
+    <!-- Font de alice -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -80,11 +86,16 @@
             <img src="imagenes/ubicacion_rosa_medio.png" alt="Ubicación">
         </div>
     </section>
-    <section class="seccion-dos">
+    <section class="seccion-dos texture-dos">
 
         <!-- Imagen superior -->
         <div class="message-banner">
-            <img src="imagenes/mensaje_confirmacion.png" alt="Mensaje de confirmación" class="img-confirmacion entrada">
+            <img src="imagenes/mensaje_confirmacion_vvino.png" alt="Mensaje de confirmación"
+                class="img-confirmacion entrada">
+        </div>
+
+        <div class="snoopy">
+            <img src="imagenes/snoopy.png" alt="snoopy">
         </div>
 
         <!-- Botón WhatsApp -->
@@ -96,11 +107,35 @@
 
         <!-- Contador -->
         <div class="contador entrada">
-            <span id="dias">00</span> :
-            <span id="horas">00</span> :
-            <span id="minutos">00</span> :
-            <span id="segundos">00</span>
+            <div class="unidad">
+                <span id="dias" class="numero">00</span>
+                <span class="label">Días</span>
+            </div>
+
+            <span class="separador">:</span>
+
+            <div class="unidad">
+                <span id="horas" class="numero">00</span>
+                <span class="label">Horas</span>
+            </div>
+
+            <span class="separador">:</span>
+
+            <div class="unidad">
+                <span id="minutos" class="numero">00</span>
+                <span class="label">Minutos</span>
+            </div>
+
+            <span class="separador">:</span>
+
+            <div class="unidad">
+                <span id="segundos" class="numero">00</span>
+                <span class="label">Segundos</span>
+            </div>
         </div>
+
+
+
 
     </section>
 </body>
