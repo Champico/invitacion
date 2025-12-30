@@ -186,6 +186,42 @@
 
 
 
+/* ======== A N I M A C I O N  F L E C H A ==============00*/
+  .flecha-scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 30px; /* ajusta según tu diseño */
+    transform: translateX(-50%);
+    animation: parpadeo 1.6s ease-in-out infinite;
+    pointer-events: none; /* no estorba clics */
+}
+
+.flecha-scroll svg {
+    fill: rgba(255, 255, 255, 0.7);
+}
+
+/* Animación */
+@keyframes parpadeo {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(8px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+
+
+
+
+
+
 
 
 
